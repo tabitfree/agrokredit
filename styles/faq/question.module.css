@@ -1,0 +1,53 @@
+.li {
+  width: 50%;
+  transition: 0.3s color ease;
+  cursor: pointer;
+  margin-left: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.li::before {
+  transition: all 0.3s ease;
+}
+
+.li:hover::before {
+  transform: rotate(90deg);
+  top: 50%;
+}
+
+.border {
+  transition: color 0.3s ease;
+}
+
+.li:hover .border {
+  color: var(--main-clr);
+}
+
+.question {
+  color: var(--main-clr);
+}
+
+.li:hover::marker {
+  transform: rotate(90deg) !important;
+}
+
+.border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.answer {
+  margin-top: 18px;
+  margin-bottom: 25px;
+  animation: show 0.5s linear;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}

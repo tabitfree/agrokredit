@@ -1,0 +1,27 @@
+.wrapper {
+  width: calc(33.3333% - 34px);
+}
+
+.wrapper:not(:nth-child(3n)) {
+  margin-right: 34px;
+}
+
+.innerWrapper {
+  display: block;
+}
+
+.titleWrap {
+  position: relative;
+  padding: 0.9375rem 0 1.0625rem;
+  text-align: center;
+}
+
+.textWrap {
+  padding: 1.5rem 2.3rem 2.3rem 2.3rem;
+  text-align: center;
+  background: #f7f7f7;
+}
+
+.list {
+  margin-bottom: 2.5rem;
+}

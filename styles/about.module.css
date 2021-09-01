@@ -1,0 +1,55 @@
+.title {
+  padding: 70px 0 64px !important;
+}
+
+.container {
+  display: flex;
+}
+
+.hero {
+  margin-bottom: 91px;
+}
+
+section.cardCont {
+  margin-bottom: 98px;
+}
+
+.card {
+  position: relative;
+  background: var(--main-clr);
+  padding: 37px 20px;
+  width: calc(25% - 16px);
+  border-radius: 4px;
+}
+
+.card:not(:last-child) {
+  margin-right: 16px;
+}
+
+.cardTitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.375rem;
+  color: var(--light-clr);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: var(--light-clr);
+}
+
+.ul li {
+  margin-bottom: 15px;
+}
+
+.flex {
+  margin-bottom: 78px;
+}
+
+.carousel {
+  background: #e5e5e5;
+  padding-top: 38px;
+  padding-bottom: 80px;
+}

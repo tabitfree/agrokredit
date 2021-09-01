@@ -1,0 +1,35 @@
+.title {
+  margin-bottom: 76px;
+}
+
+.container {
+  display: flex;
+}
+
+.info {
+  margin-bottom: 74px;
+}
+
+.h2 {
+  font-weight: 400;
+  margin-bottom: 39px;
+}
+
+.firstPara {
+  margin-bottom: 25px;
+}
+
+.ul {
+  margin-bottom: 78px;
+}
+
+.ul li {
+  margin-bottom: 15px;
+}
+
+.btnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}

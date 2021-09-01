@@ -1,0 +1,116 @@
+.cardsSection {
+  background: var(--light-clr);
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../public/images/home/hero.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.heroWrap {
+  padding: 185px 0 132px;
+}
+
+.heroBtnWrap {
+  display: flex;
+}
+
+.heroBtnWrap a:first-child {
+  margin-right: 35px;
+}
+
+.cardsWrapper {
+  display: flex;
+  padding: 83px 0 80px;
+}
+
+.reasonsCardsWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.reasons {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.h31 {
+  margin-bottom: 92px;
+}
+
+.ref {
+  padding-bottom: 50px;
+}
+
+.refWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 52px;
+}
+
+.btnWrap {
+  display: flex;
+  justify-content: center;
+}
+
+.refCard:first-child {
+  margin-right: 69px;
+}
+
+.refCard {
+  width: calc(50% - 34.5px);
+  min-height: 200px;
+  height: 100%;
+  position: relative;
+}
+
+.refTxt {
+  vertical-align: top;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #414141;
+}
+
+.refPerson {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.refLocation {
+  padding-right: 50px;
+}
+
+.ref h2 {
+  margin-bottom: 39px;
+}
+
+.refInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.refName {
+  vertical-align: top;
+}
+
+.refLocation {
+  vertical-align: bottom;
+}
+
+.refImg {
+  display: grid;
+  place-content: center;
+  margin-right: 13px;
+}

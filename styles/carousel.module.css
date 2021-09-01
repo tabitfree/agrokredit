@@ -1,0 +1,90 @@
+.carouselCont {
+  position: relative;
+}
+
+.carousel {
+  overflow: hidden;
+  cursor: grab;
+}
+
+.carousel:active {
+  cursor: grabbing;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  min-height: 260px;
+  height: 100%;
+}
+
+.position,
+.name,
+.txt {
+  font-family: 'Roboto', sans-serif;
+}
+
+.personInfo {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.personInfoSecond {
+  left: calc(50% + 54px);
+}
+
+p.txt {
+  font-style: italic;
+  margin-bottom: auto;
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.position {
+  font-size: 0.75rem;
+  font-style: normal;
+}
+
+.prev {
+  position: absolute;
+  background: url('../public/images/about/arrow-prev.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: -6vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.next {
+  position: absolute;
+  background: url('../public/images/about/arrow-next.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  right: -6vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.next,
+.prev {
+  width: 21px;
+  height: 34.5px;
+  cursor: pointer;
+}
