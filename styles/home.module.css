@@ -22,7 +22,7 @@
   display: flex;
 }
 
-.heroBtnWrap a:first-child {
+.heroBtnWrap div {
   margin-right: 35px;
 }
 

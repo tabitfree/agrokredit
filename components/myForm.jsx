@@ -42,6 +42,7 @@ export default function MyForm() {
                 id='fn'
                 name='firstName'
                 className={styles.field}
+                required
               />
               <ErrorMessage name='firstName' component='div' />
             </div>
@@ -52,6 +53,7 @@ export default function MyForm() {
                 id='ln'
                 name='lastName'
                 className={styles.field}
+                required
               />
               <ErrorMessage name='password' component='div' />
             </div>
@@ -64,12 +66,19 @@ export default function MyForm() {
                 id='em'
                 name='email'
                 className={styles.field}
+                required
               />
               <ErrorMessage name='mail' component='div' />
             </div>
             <div className={styles.fieldWrap}>
               <label htmlFor='tel'>Telefonní číslo</label>
-              <Field type='tel' id='tel' name='tel' className={styles.field} />
+              <Field
+                type='tel'
+                id='tel'
+                name='tel'
+                className={styles.field}
+                required
+              />
               <ErrorMessage name='tel' component='div' />
             </div>
           </div>

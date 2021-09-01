@@ -11,8 +11,12 @@ import styles from '../styles/home.module.css';
 
 import person1 from '../public/images/home/person1.png';
 import person2 from '../public/images/home/person2.png';
+import scrollToRef from '../components/scrollToRef';
+import { useRef } from 'react';
 
 export default function Home() {
+  const cardsSectionRef = useRef(null);
+
   return (
     <>
       <section className={styles.hero}>
@@ -23,17 +27,17 @@ export default function Home() {
               pro zemědělce a zemědělské podniky
             </h1>
             <div className={styles.heroBtnWrap}>
-              <Link href='/'>
-                <a className='btn'>Více o úvěrech</a>
-              </Link>
-              <Link href='/'>
+              <div onClick={() => scrollToRef(cardsSectionRef)} className='btn'>
+                Více o úvěrech
+              </div>
+              <Link href='/nezavazna-poptavka'>
                 <a className='btn'>Nezávazná poptávka</a>
               </Link>
             </div>
           </div>
         </div>
       </section>
-      <section className={styles.cardsSection}>
+      <section className={styles.cardsSection} ref={cardsSectionRef}>
         <div className='container'>
           <div className={styles.cardsWrapper}>
             {cardsArray.map((card, key) => {
@@ -116,7 +120,7 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.btnWrap}>
-              <Link href='/'>
+              <Link href='/o-nas'>
                 <a className='btn'>Více referencí</a>
               </Link>
             </div>

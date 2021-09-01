@@ -15,7 +15,7 @@ let cardsArray = [
         splatnost od 3 měsíců do <b>5 let</b>
       </p>,
     ],
-    '/',
+    '/puda+',
   ],
   [
     '/static/images/home/agro.png',
@@ -33,7 +33,7 @@ let cardsArray = [
         splatnost od 3 měsíců do <b>5 let</b>
       </p>,
     ],
-    '/',
+    '/agro+',
   ],
   [
     '/public/images/home/sklizen.png',
@@ -51,7 +51,7 @@ let cardsArray = [
         splatnost do <b>12 měsíců</b>
       </p>,
     ],
-    '/',
+    '/sklizen+',
   ],
 ];
 
