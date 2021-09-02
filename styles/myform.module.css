@@ -181,6 +181,17 @@
     min-height: 69px;
     align-items: center !important;
     justify-content: center !important;
+    flex-direction: column;
+  }
+
+  .radioLabel input[type='radio'] {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .radioLabel {
+    min-height: 85px !important;
   }
 }
 
@@ -194,10 +205,6 @@
   .radioLabel {
     flex-direction: column;
     text-align: center;
-  }
-
-  .radioLabel input[type='radio'] {
-    margin-bottom: 10px;
   }
 }
 
