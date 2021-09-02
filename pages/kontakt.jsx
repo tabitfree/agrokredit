@@ -19,7 +19,7 @@ export default function Contact() {
         <div className='container'>
           <div className='inner-container'>
             <div className={'h2-wrap ' + styles.h2Wrap}>
-              <h2>Spojste se s námi</h2>
+              <h2>Spojte se s námi</h2>
               <p>
                 Chcete využít našich služeb nebo se jen na něco zeptat? <br />
                 Ozvěte se nám, rádi vám pomůžeme.
