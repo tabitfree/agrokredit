@@ -33,7 +33,7 @@ li.hasChildren {
   bottom: 0;
   transform: translate(-50%, 100%);
   left: 50%;
-  width: 100%;
+  width: 150%;
   height: auto;
   background: #f5f5f5;
   display: flex;
@@ -117,5 +117,11 @@ li.hasChildren {
   100% {
     transform: rotateX(0deg) translate(-50%, 100%);
     bottom: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .show {
+    width: 100%;
   }
 }
