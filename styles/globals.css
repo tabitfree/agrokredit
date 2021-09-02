@@ -217,7 +217,7 @@ li.arrow::before {
     url('../public/images/home/puda.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 #card-title-wrap1 {
@@ -226,7 +226,7 @@ li.arrow::before {
 
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 #card-title-wrap2 {
@@ -234,7 +234,7 @@ li.arrow::before {
     url('../public/images/home/sklizen.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: center;
+  background-size: cover;
 }
 
 .container > .h2-wrap,
@@ -329,4 +329,16 @@ textarea:active {
 label.low {
   text-transform: none;
   align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --container-w: 980px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --container-w: 740px;
+  }
 }

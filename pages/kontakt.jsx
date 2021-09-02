@@ -118,7 +118,7 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-            <div className={`${styles.person} ${styles.person4} a`}>
+            <div className={`${styles.person} ${styles.person4}`}>
               <div className={styles.name}>Terezie Rejzková</div>
               <div className={styles.position}>
                 Regionální zástupce pro Východočeský a Jihomoravský kraj

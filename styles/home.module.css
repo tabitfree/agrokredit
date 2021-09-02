@@ -28,7 +28,9 @@
 
 .cardsWrapper {
   display: flex;
+  flex-wrap: wrap;
   padding: 83px 0 80px;
+  justify-content: center;
 }
 
 .reasonsCardsWrapper {
@@ -113,4 +115,61 @@
   display: grid;
   place-content: center;
   margin-right: 13px;
+}
+
+@media screen and (max-width: 768px) {
+  .reasonsCardsWrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroBtnWrap {
+    flex-direction: column;
+  }
+
+  .heroBtnWrap > a,
+  .heroBtnWrap > div {
+    margin-right: 0;
+    max-width: 250px;
+  }
+
+  .heroBtnWrap > div {
+    margin-bottom: 13px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .refWrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .refCard:first-child {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .refCard {
+    min-height: 200px;
+    width: 80%;
+    border-bottom: 1px solid var(--main-clr);
+    padding-bottom: 80px;
+  }
+
+  .refPerson {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .refCard {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .refCard:last-child {
+    min-height: 230px;
+  }
 }

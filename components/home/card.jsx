@@ -26,7 +26,7 @@ export default function Card({ img, title, subTitle, txtArr, link, id }) {
             })}
           </ul>
           <Link href={link}>
-            <a className='btn'>Více informací</a>
+            <a className={'btn ' + styles.btn}>Více informací</a>
           </Link>
         </div>
       </div>

@@ -20,8 +20,46 @@
   padding: 1.5rem 2.3rem 2.3rem 2.3rem;
   text-align: center;
   background: #f7f7f7;
+  position: relative;
+  min-height: 280px;
 }
 
 .list {
   margin-bottom: 2.5rem;
+}
+
+.list li {
+  margin-bottom: 0.3rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: calc(50% - 17px);
+    margin-bottom: 34px;
+  }
+  .wrapper:not(:nth-child(3n)) {
+    margin-right: 0;
+  }
+  .wrapper:first-child {
+    margin-right: 34px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper,
+  .wrapper:first-child {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .list li {
+    margin-bottom: 0.5rem;
+  }
 }
