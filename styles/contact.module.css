@@ -11,7 +11,7 @@
 }
 
 .card {
-  width: calc(33% - (105px / 3));
+  width: calc(33% - 68px);
   display: flex;
   flex-direction: column;
   align-content: center;
