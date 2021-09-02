@@ -11,3 +11,35 @@
   font-size: 1.15rem;
   line-height: 1.5;
 }
+
+.br {
+  display: none;
+}
+
+@media screen and (max-width: 850px) {
+  .txt h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .txt h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .txt h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .br {
+    display: block;
+  }
+
+  .info {
+    width: 100%;
+  }
+}

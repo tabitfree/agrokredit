@@ -53,3 +53,62 @@ section.cardCont {
   padding-top: 38px;
   padding-bottom: 80px;
 }
+
+@media screen and (max-width: 800px) {
+  .card:not(:last-child) {
+    margin-right: 0;
+  }
+  .card {
+    width: calc(50% - 20px);
+    min-height: 174px;
+    margin-right: 0;
+  }
+
+  .card:nth-child(2n + 1) {
+    margin-right: 40px;
+  }
+
+  .card:not(:nth-child(3)),
+  .card:not(:nth-child(4)) {
+    margin-bottom: 40px;
+  }
+
+  .cardCont .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  section.cardCont {
+    margin-bottom: 50px;
+  }
+  .carousel {
+    padding-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero .container {
+    flex-direction: column;
+  }
+  .halfFirst {
+    margin-bottom: 39px;
+  }
+  .first {
+    margin-right: 54px !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .flex {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 100%;
+    margin-right: 0 !important;
+    margin-bottom: 10px !important;
+  }
+}

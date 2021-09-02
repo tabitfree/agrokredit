@@ -194,6 +194,7 @@ li.arrow {
   position: relative;
   text-align: start;
   padding-left: 0.5rem;
+  margin-left: 0.9rem;
   /* list-style: url('../public/images/icons/arrow.png'); */
 }
 
@@ -263,6 +264,7 @@ li.arrow::before {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 label {
@@ -337,8 +339,54 @@ label.low {
   }
 }
 
+@media screen and (max-width: 960px) {
+  .half {
+    width: 100%;
+  }
+
+  .halfContainer .half.halfFirst {
+    width: 80%;
+    display: block;
+    margin-bottom: 39px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .grid {
+    column-gap: 100px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   :root {
     --container-w: 740px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .halfContainer .half.halfFirst {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  button[type='submit'] {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .grid {
+    row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h2::before {
+    left: 0;
+  }
+
+  label {
+    font-size: 1rem;
   }
 }

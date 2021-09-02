@@ -16,7 +16,7 @@ export default function Puda() {
         </div>
       </section>
       <section className={styles.info}>
-        <div className={'container ' + styles.container}>
+        <div className={'container halfContainer ' + styles.container}>
           <div className='half halfFirst'>
             <h2 className={styles.h2}>
               Úvěr <b>Agro+</b>

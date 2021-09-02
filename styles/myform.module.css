@@ -175,3 +175,35 @@
   background-size: cover;
   background-position: center;
 }
+
+@media screen and (max-width: 1050px) {
+  .radioLabel {
+    min-height: 69px;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .fieldWrap2 {
+    width: calc(50% - 16px);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .radioLabel {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .radioLabel input[type='radio'] {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .fieldWrap2 {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+}

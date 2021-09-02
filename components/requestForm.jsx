@@ -58,7 +58,7 @@ export default function RequestForm() {
     >
       {({ isSubmitting, values }) => (
         <Form id='myForm'>
-          <div className='flex'>
+          <div className={'flex ' + styles.flexin}>
             <div className={styles.fieldWrap2}>
               <div className={styles.card}>
                 <div className={styles.cardName} data-id='pudaplus'>

@@ -19,7 +19,7 @@ export default function About() {
 
       <section className={styles.hero}>
         <div className={'container ' + styles.container}>
-          <div className='half halfFirst'>
+          <div className={`half halfFirst ${styles.halfFirst}`}>
             <h2>
               <b>Agrokredit a.s.</b>
             </h2>
@@ -73,7 +73,7 @@ export default function About() {
               <h2>Proč s námi?</h2>
             </div>
             <div className={'flex ' + styles.flex}>
-              <div className='half halfFirst'>
+              <div className={`half halfFirst ${styles.first}`}>
                 <ul className={styles.ul}>
                   <li className='arrow'>
                     Rozumíme <b>potřebám</b> našich klientů.

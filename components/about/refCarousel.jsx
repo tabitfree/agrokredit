@@ -1,9 +1,11 @@
 import { useEmblaCarousel } from 'embla-carousel/react';
 import { useCallback, useEffect } from 'react';
 import styles from '../../styles/carousel.module.css';
+import useWindowSize from '../useWindowSize';
 
 export default function RefCarousel() {
-  const [ref, api] = useEmblaCarousel({ loop: false });
+  const [ref, api] = useEmblaCarousel({ loop: true });
+  const { width, height } = useWindowSize();
 
   const scrollPrev = useCallback(() => {
     if (api) {
@@ -34,27 +36,48 @@ export default function RefCarousel() {
                 <div className={styles.position}>OSVČ</div>
               </div>
             </div>
-            <div className='half'>
-              <p className={styles.txt}>
-                „Naše společnost kvůli nedopatření s úhradou faktury za
-                telekomunikační služby dostala do registru dlužníků a banka nám
-                kvůli tomu neprodloužila kontokorentní úvěr, což bylo pro naši
-                malou společnost téměř likvidační. Byli mi doporučeny různé
-                nebankovní společnosti, nicméně s rozumnou nabídkou přišla až
-                společnost AGROKREDIT.“
-              </p>
-              <div
-                className={styles.personInfo + ' ' + styles.personInfoSecond}
-              >
-                <div className={styles.name}>Ing. Roman Bartoš</div>
-                <div className={styles.position}>
-                  Jednatel, Liduška HK s.r.o.
+            {width > 650 && (
+              <div className='half'>
+                <p className={styles.txt}>
+                  „Naše společnost kvůli nedopatření s úhradou faktury za
+                  telekomunikační služby dostala do registru dlužníků a banka
+                  nám kvůli tomu neprodloužila kontokorentní úvěr, což bylo pro
+                  naši malou společnost téměř likvidační. Byli mi doporučeny
+                  různé nebankovní společnosti, nicméně s rozumnou nabídkou
+                  přišla až společnost AGROKREDIT.“
+                </p>
+                <div
+                  className={styles.personInfo + ' ' + styles.personInfoSecond}
+                >
+                  <div className={styles.name}>Ing. Roman Bartoš</div>
+                  <div className={styles.position}>
+                    Jednatel, Liduška HK s.r.o.
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
             <div className={styles.reference}></div>
           </div>
-          <div className={styles.slide}>Slide 2</div>
+          <div className={styles.slide}>
+            {width <= 650 && (
+              <div className='half'>
+                <p className={styles.txt}>
+                  „Naše společnost kvůli nedopatření s úhradou faktury za
+                  telekomunikační služby dostala do registru dlužníků a banka
+                  nám kvůli tomu neprodloužila kontokorentní úvěr, což bylo pro
+                  naši malou společnost téměř likvidační. Byli mi doporučeny
+                  různé nebankovní společnosti, nicméně s rozumnou nabídkou
+                  přišla až společnost AGROKREDIT.“
+                </p>
+                <div className={styles.personInfo}>
+                  <div className={styles.name}>Ing. Roman Bartoš</div>
+                  <div className={styles.position}>
+                    Jednatel, Liduška HK s.r.o.
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
           <div className={styles.slide}>Slide 3</div>
         </div>
       </div>

@@ -75,7 +75,7 @@ export default function Contact() {
             <h2>Náš tým</h2>
           </div>
 
-          <div className={styles.teamWrapper}>
+          <div className={styles.teamWrapper + ' grid'}>
             <h3 className={`${styles.head} dark`}>Vedení společnosti</h3>
             <div className={styles.person + ' ' + styles.person1}>
               <div className={styles.name}>Ing. Petr Kromíchal</div>

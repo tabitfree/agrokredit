@@ -17,7 +17,7 @@ export default function Request() {
       <section className={styles.txt}>
         <div className='container'>
           <h3 className='dark'>
-            Vyplňte formulář nebo nám zavolejte:{' '}
+            Vyplňte formulář nebo nám zavolejte: <br className={styles.br} />
             <a href='tel:+420554004678' className='mainclr'>
               <b>+420 554 004 678</b>
             </a>

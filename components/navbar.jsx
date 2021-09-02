@@ -60,7 +60,10 @@ export default function Navbar() {
             // onClick={handleMouseMove}
           >
             <p>Úvěry a půjčky</p>
-            <div className={showChild ? style.show : style.children}>
+            <div
+              className={showChild ? style.show : style.children}
+              onClick={handleHeaderClick}
+            >
               <Link href='/puda+' onClick={handleHeaderClick}>
                 <a>Hypo půjčka PŮDA+</a>
               </Link>

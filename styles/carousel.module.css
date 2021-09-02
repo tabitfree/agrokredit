@@ -88,3 +88,40 @@ p.txt {
   height: 34.5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 960px) {
+  .next {
+    top: 130%;
+    right: 40%;
+    transform: translateX(40%);
+    bottom: 0;
+  }
+  .prev {
+    top: 130%;
+    left: 40%;
+    transform: translateX(-40%);
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .reference {
+    margin-right: 0;
+  }
+
+  .slide {
+    min-height: 180px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .slide {
+    min-height: 220px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .slide {
+    min-height: 250px;
+  }
+}
